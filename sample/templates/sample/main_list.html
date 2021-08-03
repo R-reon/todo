@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}パラメータ - {{ title }}{% endblock %}
+
+{% block content %}
+<h3>パラメータ - {{ title }}</h1>
+
+{% for main in mainlist %}
+    <p>項目名: {{ main.title }}</p>
+    <p>日付: {{ main.datetime }}</p>
+{% endfor %}
+{% endblock %}

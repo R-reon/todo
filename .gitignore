@@ -1,0 +1,9 @@
+# Ignore all pyc files
+*pyc
+
+#Documents and files to ignore
+__pycache__/
+migrations/
+db.sqlite3
+db.sqlite3.exe
+requirements.txt
