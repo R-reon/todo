@@ -5,7 +5,7 @@ admin等の設定 → sample
 
 # 目的
 
-djangorestframework-jwtを用いて、tokenを受け取り、認証できるようにする。今更、やってること間違ってる気がして絶望しています
+djangorestframework-jwtを用いて、tokenを受け取り、認証できるようにする。今更、間違ってる気がして絶望しています
 
 # Requirement
 
