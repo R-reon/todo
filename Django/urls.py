@@ -1,4 +1,4 @@
-"""config URL Configuration
+"""Django URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -14,16 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path
-from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token, verify_jwt_token
+from django.urls import path
+from api.views import Login, Something
 
 urlpatterns = [
-     path('admin/', admin.site.urls),
-    #sampleアプリケーションのURLconf読み込み
-    path('sample/', include('sample.urls')),
-    #apiアプリケーションのURLconf読み込み
-    path('api/', include('api.urls')),
-    path('api-token-auth/', obtain_jwt_token),
-    path('api-token-refresh/', refresh_jwt_token),
-    path('api-token-verify/', verify_jwt_token),
+    path('admin/', admin.site.urls),
+    path('login/', Login.as_view()),
+    path('data/', Something.as_view())
 ]
