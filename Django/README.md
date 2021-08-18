@@ -3,6 +3,7 @@ django(django-admin startproject) → config,
 vue(django-admin startapp) → api, 
 admin等の設定 → sample
 
+
 # 目的
 
 djangorestframework-jwtを用いて、tokenを受け取り、認証できるようにする。今更、間違ってる気がして絶望しています
