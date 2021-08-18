@@ -8,7 +8,6 @@ from rest_framework import status
 
 
 class Login(APIView):
-
     authentication_classes = [NormalAuthentication,]
 
     def post(self, request, *args, **kwargs):
