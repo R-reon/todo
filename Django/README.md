@@ -1,6 +1,5 @@
 # Use
-urls.pyの部分を見ればなんとかので、
-Gitに一気に載せる方法を書き留めときます
+Githubに一気に載せる手順
 
 ```bash
 git clone https://github.com/○○　　(予め作ってある)
