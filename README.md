@@ -1,10 +1,10 @@
 # django-vuejs
-Django + Vue.js で簡単なWEBアプリケーションを作成する
+Django + Vue.js で CRUD を作成する
 
 # 実行方法
 ## 1. リポジトリのクローン
 ```bash
-
+git clone https://github.com/R-reon/todo.git
 ```
 ***
 ## 2. バックエンド実行
