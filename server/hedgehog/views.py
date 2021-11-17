@@ -1,9 +1,12 @@
 from django.contrib.auth.models import User
 from rest_framework import generics, permissions
 
-from .models import PileColor, HedgeHog, Comment
+from .models import PileColor, HedgeHog, Comment, TodoModel
 from .serializers import UserSerializer, PileColorSerializer, HedgeHogSerializer, CommentSerializer
 
+from django.views import generic
+# from .models import TodoModel
+from django.urls import reverse_lazy
 
 class UserList(generics.ListAPIView):
     """ View to list all users"""
@@ -73,3 +76,32 @@ class CommentRetrieveUpdate(generics.RetrieveUpdateAPIView):
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     #permission_classes = (permissions.IsAuthenticated, )
+
+
+class TodoList(generic.ListView):
+    template_name = 'hedgehog/list.html'
+    model = TodoModel
+
+
+class TodoDetail(generic.DetailView):
+    template_name = 'hedgehog/detail.html'
+    model = TodoModel
+
+class TodoUpdate(generic.UpdateView):
+    template_name = 'hedgehog/update.html'
+    model = TodoModel
+    fields = ('title', 'content', 'deadline')
+    success_url = reverse_lazy('list')
+
+class TodoDelete(generic.DeleteView):
+    template_name = 'hedgehog/delete.html'
+    model = TodoModel
+
+    success_url = reverse_lazy('list')
+
+class TodoCreate(generic.CreateView):
+    template_name = 'hedgehog/create.html'
+    model = TodoModel
+    fields = ('title', 'content', 'deadline')
+
+    success_url = reverse_lazy('list')

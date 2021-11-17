@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <v-btn @click="getHedgeHogData">これから、Todoを作ります。</v-btn>
+    <v-btn @click="getHedgeHogData">test</v-btn>
   </div>
 </template>
 
