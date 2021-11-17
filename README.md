@@ -1,16 +1,10 @@
-# django-vuejs
-Django + Vue.js で簡単なWEBアプリケーションを作成する
-![title](https://github.com/mila411/django-vuejs/blob/master/title.png)
-
-[DjangoとVue.jsで作るWEBアプリ（その1: 設定編）](https://nmomos.com/tips/python/2019/07/17/django-vuejs-1/ "DjangoとVue.jsで作るWEBアプリ（その1: 設定編）")  
-[DjangoとVue.jsで作るWEBアプリ（その2: 認証機能編）](https://nmomos.com/tips/python/2019/07/18/django-vuejs-2/ "DjangoとVue.jsで作るWEBアプリ（その2: 認証機能編）")  
-[DjangoとVue.jsで作るWEBアプリ（その3: API実装編）](https://nmomos.com/tips/python/2019/07/19/django-vuejs-3/ "DjangoとVue.jsで作るWEBアプリ（その3: API実装編）")  
-
+# Todo
+Django + Vue.js で CRUD を作成する
 
 # 実行方法
 ## 1. リポジトリのクローン
 ```bash
-https://github.com/mila411/django-vuejs.git
+git clone https://github.com/R-reon/todo.git
 ```
 ***
 ## 2. バックエンド実行
